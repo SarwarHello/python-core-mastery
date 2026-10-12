@@ -32,6 +32,46 @@ keyword-only arguments, return types, generics, callbacks and runtime validation
 ['1', '2', '3']
 ```
 
+## Day 2: lists, tuples, sets and dictionaries
+
+[Topic guide and exercises](02_data_structures/README.md) cover sorted list copies,
+min/max tuple results, set intersection/difference and dictionary grouping.
+Existing ordered deduplication and word counting provide additional practice.
+
+```powershell
+.venv\Scripts\python.exe 02_data_structures/examples.py
+.venv\Scripts\python.exe examples/collections_demo.py
+```
+
+The first example prints:
+
+```text
+[9, 7]
+(2, 9)
+['Python'] ['SQL']
+{'backend': ['Ada', 'Sam'], 'data': ['Lin']}
+```
+
+The collections example prints:
+
+```text
+['Python', 'SQL', 'Git']
+{'python': 3, 'sql': 1, 'and': 1}
+```
+
+`ordered_unique` consumes hashable items once and preserves the first occurrence.
+Python equality rules apply, including `1 == True`; unhashable values raise
+TypeError. `word_frequencies` supports casefolded or case-sensitive counting,
+retains internal apostrophes and dictionary encounter order, and rejects invalid
+argument types. Its standard-library regex tokenizer is intentionally limited;
+see [the concept guide](docs/concepts.md) for Unicode and complexity notes.
+
+## Progress
+
+Days 1 and 2 are implemented with 65 passing local tests. Day 2 was completed
+ahead of its target date; actual work is recorded as 12 October 2026, not backdated.
+See [ROADMAP.md](ROADMAP.md) and [PROGRESS.md](PROGRESS.md) for scope and evidence.
+
 ## Checks
 
 ```powershell

@@ -23,3 +23,5 @@ jobs:
       - run: python -m ruff check .
       - run: python -m ruff format --check .
       - run: python 01_functions/examples.py
+      - run: python 02_data_structures/examples.py
+      - run: python examples/collections_demo.py
