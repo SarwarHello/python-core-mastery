@@ -66,9 +66,30 @@ retains internal apostrophes and dictionary encounter order, and rejects invalid
 argument types. Its standard-library regex tokenizer is intentionally limited;
 see [the concept guide](docs/concepts.md) for Unicode and complexity notes.
 
+## Day 3: strings and files
+
+[Topic guide and exercises](03_strings_and_files/README.md) cover split/join,
+partition/strip, pathlib, explicit UTF-8, context managers and JSON round trips.
+
+```powershell
+.venv\Scripts\python.exe 03_strings_and_files/examples.py
+```
+
+```text
+Python and files
+('language', 'Python=3.12')
+['Python basics', 'JSON files']
+Existing notes preserved
+```
+
+The example creates only temporary files and cleans up afterwards. Saving notes
+uses exclusive creation; existing files are preserved. Malformed JSON, wrong
+schemas, missing paths and invalid encoding have explicit error contracts.
+Day 3 was completed on 21 October 2026, after its original target date.
+
 ## Progress
 
-Days 1 and 2 are implemented with 65 passing local tests. Day 2 was completed
+Days 1–3 are implemented with 103 passing local tests. Day 2 was completed
 ahead of its target date; actual work is recorded as 12 October 2026, not backdated.
 See [ROADMAP.md](ROADMAP.md) and [PROGRESS.md](PROGRESS.md) for scope and evidence.
 
