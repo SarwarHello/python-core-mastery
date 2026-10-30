@@ -26,3 +26,4 @@ jobs:
       - run: python 02_data_structures/examples.py
       - run: python examples/collections_demo.py
       - run: python 03_strings_and_files/examples.py
+      - run: python 04_oop/examples.py

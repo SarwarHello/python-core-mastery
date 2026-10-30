@@ -87,9 +87,31 @@ uses exclusive creation; existing files are preserved. Malformed JSON, wrong
 schemas, missing paths and invalid encoding have explicit error contracts.
 Day 3 was completed on 21 October 2026, after its original target date.
 
+## Day 4: OOP, inheritance and encapsulation
+
+[Topic guide and exercises](04_oop/README.md) demonstrate constructors, instance
+state, read-only properties, validated methods, super(), overriding, polymorphism
+and composition through StockItem, LimitedStockItem and Inventory.
+
+```powershell
+.venv\Scripts\python.exe 04_oop/examples.py
+```
+
+```text
+PEN: 4
+BOX: 3
+Total: 7
+restock exceeds capacity
+After withdrawal: 6
+```
+
+Failed operations preserve stock quantities. Inventory exposes membership snapshots
+while sharing the underlying stock items intentionally. This in-memory exercise is
+not thread-safe or persistent. Day 4 was completed on 30 October 2026.
+
 ## Progress
 
-Days 1–3 are implemented with 103 passing local tests. Day 2 was completed
+Days 1–4 are implemented with 141 passing local tests. Day 2 was completed
 ahead of its target date; actual work is recorded as 12 October 2026, not backdated.
 See [ROADMAP.md](ROADMAP.md) and [PROGRESS.md](PROGRESS.md) for scope and evidence.
 

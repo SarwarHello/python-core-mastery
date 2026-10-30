@@ -1,6 +1,6 @@
 # Progress
 
-Last updated: 21 October 2026 (Europe/London). Days 1–2 were completed on 12 October; Day 3 on 21 October.
+Last updated: 30 October 2026 (Europe/London). Days 1–2 were completed on 12 October; Day 3 on 21 October.
 
 ## Completed scope
 
@@ -70,6 +70,27 @@ Completed on 21 October 2026 (original target 14 October; no backdating).
 - This entry accompanies the Day 3 implementation commit. Push and remote CI
   results are recorded separately in the central workspace log after publication.
 
+## Day 4 — OOP, inheritance and encapsulation
+
+Completed on 30 October 2026 (original target 15 October; no backdating).
+
+- Added StockItem with constructor validation, per-instance state, read-only public
+  properties and validated restock/withdraw methods.
+- Added LimitedStockItem demonstrating super(), overriding and inherited methods;
+  the base restock contract explicitly allows storage-policy rejection.
+- Added Inventory to demonstrate composition, unique SKU membership, independent
+  containers, live totals and shallow membership snapshots.
+- Added numbered guide and deterministic example; CI runs the new example.
+- Validation: 38 new tests; 141 tests passed, 0 failed/skipped. Ruff lint and format
+  passed, example output matched README, pip check reported no broken requirements.
+- No new dependencies. Underscore attributes are conventions, not a security
+  boundary; the model is not persistent or safe for concurrent mutation.
+- This entry accompanies the Day 4 implementation commit. Push and remote CI
+  outcomes are recorded in the central workspace log after publication.
+
+Day 3 publication was verified previously: commit `9a85d9f`, successful CI at
+https://github.com/SarwarHello/python-core-mastery/actions/runs/39678155417.
+
 ## Next step
 
-Day 4: OOP, inheritance and encapsulation. Await the user's next instruction.
+Day 5: decorators and generators. Await the user's next instruction.
