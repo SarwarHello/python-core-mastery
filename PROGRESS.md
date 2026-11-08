@@ -1,6 +1,6 @@
 # Progress
 
-Last updated: 30 October 2026 (Europe/London). Days 1–2 were completed on 12 October; Day 3 on 21 October.
+Last updated: 8 November 2026 (Europe/London). Days 1–2 were completed on 12 October; Day 3 on 21 October.
 
 ## Completed scope
 
@@ -91,6 +91,30 @@ Completed on 30 October 2026 (original target 15 October; no backdating).
 Day 3 publication was verified previously: commit `9a85d9f`, successful CI at
 https://github.com/SarwarHello/python-core-mastery/actions/runs/39678155417.
 
+## Day 5 - decorators and generators
+
+Completed 8 November 2026 (original target 16 October; no backdating).
+
+- Added typed timed decorator factory with wraps, an injected clock and reporting
+  callback. Preserves arguments, return objects and metadata; rejects direct
+  generator/async functions. Eleven deterministic tests cover its contracts.
+- Added lazy batches and running_totals with 23 tests for validation timing,
+  one-pass iteration, read-ahead bounds, partial batches, source errors and
+  bounded consumption of an infinite source.
+- Added numbered learning guide and integrated example; CI runs the example.
+- Validation: 175 tests passed, 0 failures/skips; Ruff lint/format passed; example
+  output matched; pip check passed. No new dependencies or timing-based assertions.
+- Three meaningful commits requested: e98214f (tested decorator), e11d57b (tested
+  generators), and the commit containing this integration/documentation entry.
+- A shell startup error interrupted the first documentation attempt before files
+  were created. Retried with Windows PowerShell successfully; no code/test failure.
+- Timing reports successful synchronous calls only; callback failures propagate.
+  Generators do not own/close their sources; retaining results uses caller memory.
+- Push and remote CI verification are recorded in the central workspace log.
+
+Day 4 push and CI succeeded: commit 50a427f; run
+https://github.com/SarwarHello/python-core-mastery/actions/runs/41143959811.
+
 ## Next step
 
-Day 5: decorators and generators. Await the user's next instruction.
+Day 6: exceptions, logging and context managers. Await user instruction.

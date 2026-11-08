@@ -109,9 +109,30 @@ Failed operations preserve stock quantities. Inventory exposes membership snapsh
 while sharing the underlying stock items intentionally. This in-memory exercise is
 not thread-safe or persistent. Day 4 was completed on 30 October 2026.
 
+## Day 5: decorators and generators
+
+[Topic guide](05_decorators_generators/README.md) explains decorator factories,
+closures, wraps, typed callable forwarding, lazy batching and running totals.
+
+```powershell
+.venv\Scripts\python.exe 05_decorators_generators/examples.py
+```
+
+```text
+[(2, 5, 9), (10,)]
+consume: 0.25s (illustrative clock)
+First total: 1
+Remaining totals: [3, 6]
+Exhausted: []
+```
+
+The clock is synthetic for reproducible output. The decorator times synchronous
+consumption, not creation of a lazy iterator. Tests use no sleeps. Day 5 was
+completed on 8 November 2026 with three meaningful commits.
+
 ## Progress
 
-Days 1–4 are implemented with 141 passing local tests. Day 2 was completed
+Days 1–5 are implemented with 175 passing local tests. Day 2 was completed
 ahead of its target date; actual work is recorded as 12 October 2026, not backdated.
 See [ROADMAP.md](ROADMAP.md) and [PROGRESS.md](PROGRESS.md) for scope and evidence.
 
