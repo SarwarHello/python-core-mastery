@@ -1,6 +1,6 @@
 # Progress
 
-Last updated: 8 November 2026 (Europe/London). Days 1–2 were completed on 12 October; Day 3 on 21 October.
+Last updated: 14 November 2026 (Europe/London). Days 1–2 were completed on 12 October; Day 3 on 21 October.
 
 ## Completed scope
 
@@ -115,6 +115,29 @@ Completed 8 November 2026 (original target 16 October; no backdating).
 Day 4 push and CI succeeded: commit 50a427f; run
 https://github.com/SarwarHello/python-core-mastery/actions/runs/41143959811.
 
+## Day 6 - exceptions, logging and context managers
+
+Completed 14 November 2026 (original target 17 October; no backdating).
+
+- Added NotesLoadError and load_notes_safely, reusing Day 3 parsing. Expected I/O
+  and data errors are chained; unexpected programming errors propagate unchanged.
+  Logs expose safe outcome/count/category fields, without raw note text or paths.
+- Added staged_text_writer: same-directory temporary file, close before replacement,
+  publication on success, rollback/cleanup on failure, no exception suppression.
+- Added numbered guide and integrated example; CI now runs the example.
+- Validation: 13 exception/logging tests and 10 context-manager tests added;
+  198 passed, 0 failed/skipped overall. Ruff lint/format passed; example output
+  matched the guide; pip check passed. No new dependencies.
+- Commits: b354dcf (errors/logging), cfce740 (context manager), and this commit
+  (learning guide, integrated example, CI and progress).
+- Limits: no crash durability, metadata preservation or concurrent-writer control;
+  cleanup failures propagate. Chained causes may contain private details even
+  though the emitted log messages omit them.
+- Push and remote CI results are recorded in the central workspace log.
+
+Day 5 publication verified: e98214f, e11d57b and 612f0af; successful CI at
+https://github.com/SarwarHello/python-core-mastery/actions/runs/42445126938.
+
 ## Next step
 
-Day 6: exceptions, logging and context managers. Await user instruction.
+Day 7: mini-project - CLI task manager. Await user instruction.

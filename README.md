@@ -130,9 +130,24 @@ The clock is synthetic for reproducible output. The decorator times synchronous
 consumption, not creation of a lazy iterator. Tests use no sleeps. Day 5 was
 completed on 8 November 2026 with three meaningful commits.
 
+## Day 6: exceptions, logging and context managers
+
+[Topic guide](06_error_handling/README.md) demonstrates domain exceptions with
+preserved causes, structured log fields, and a context manager that publishes a
+staged text file only on successful exit. Existing note parsing is reused.
+
+```powershell
+.venv\Scripts\python.exe 06_error_handling/examples.py
+```
+
+The temporary-file example loads notes, rolls back a cancelled edit, and recovers
+from a missing file. Logs contain outcome metadata rather than raw notes or paths.
+The guide includes exact output and filesystem limitations. Day 6 was completed on
+14 November 2026 with three meaningful commits.
+
 ## Progress
 
-Days 1–5 are implemented with 175 passing local tests. Day 2 was completed
+Days 1–6 are implemented with 198 passing local tests. Day 2 was completed
 ahead of its target date; actual work is recorded as 12 October 2026, not backdated.
 See [ROADMAP.md](ROADMAP.md) and [PROGRESS.md](PROGRESS.md) for scope and evidence.
 

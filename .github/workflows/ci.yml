@@ -28,3 +28,4 @@ jobs:
       - run: python 03_strings_and_files/examples.py
       - run: python 04_oop/examples.py
       - run: python 05_decorators_generators/examples.py
+      - run: python 06_error_handling/examples.py
