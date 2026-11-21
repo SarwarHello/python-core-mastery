@@ -29,3 +29,5 @@ Day 4 was requested on 30 October 2026 under the same implementation/test/commit
 Day 5 was authorized on 8 November 2026 with 3-5 meaningful commits requested. Use three coherent changes: tested decorator; tested generators; integrated example, documentation and CI. Later days require instruction.
 
 Day 6 was requested on 14 November 2026 under the established tested-commit-and-push workflow, retaining meaningful commit boundaries. Later days require instruction.
+
+Day 7 was requested on 21 November 2026 under the established implementation/test/commit/push workflow. The core foundations phase is complete. Day 8 belongs in python-dsa-challenges and requires a new instruction; do not create it yet.

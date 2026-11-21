@@ -11,11 +11,11 @@ actual completion is recorded separately and contributions are never backdated.
 | 4 | 15 October 2026 | OOP, inheritance, encapsulation | Complete on 30 October 2026 |
 | 5 | 16 October 2026 | Decorators and generators | Complete on 8 November 2026 |
 | 6 | 17 October 2026 | Exceptions, logging, context managers | Complete on 14 November 2026 |
-| 7 | 18 October 2026 | Mini-project: CLI task manager | Planned |
+| 7 | 18 October 2026 | Mini-project: CLI task manager | Complete on 21 November 2026 |
 
 Numbered topic folders provide explanations and runnable examples. Reusable
 implementations live in src/core_mastery and tests in tests/. This preserves the
 source roadmap's learning navigation without duplicating implementation files.
 
 The user authorized Day 1/2 implementation, repository creation, commits and pushes.
-Day 3 was subsequently authorized and completed on 21 October 2026. Day 4 was subsequently completed on 30 October 2026. Day 5 was completed on 8 November 2026. Day 6 was completed on 14 November 2026. Next task: Day 7 CLI task manager, when instructed. No later-day code is included.
+Day 3 was subsequently authorized and completed on 21 October 2026. Day 4 was subsequently completed on 30 October 2026. Day 5 was completed on 8 November 2026. Day 6 was completed on 14 November 2026. Day 7 was completed on 21 November 2026. The foundations phase is complete. Next portfolio task: Day 8 arrays and two pointers in python-dsa-challenges, when instructed. No later-day code is included.

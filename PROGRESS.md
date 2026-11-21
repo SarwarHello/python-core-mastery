@@ -1,6 +1,6 @@
 # Progress
 
-Last updated: 14 November 2026 (Europe/London). Days 1–2 were completed on 12 October; Day 3 on 21 October.
+Last updated: 21 November 2026 (Europe/London). Days 1–2 were completed on 12 October; Day 3 on 21 October.
 
 ## Completed scope
 
@@ -138,6 +138,29 @@ Completed 14 November 2026 (original target 17 October; no backdating).
 Day 5 publication verified: e98214f, e11d57b and 612f0af; successful CI at
 https://github.com/SarwarHello/python-core-mastery/actions/runs/42445126938.
 
+## Day 7 - CLI task manager
+
+Completed 21 November 2026 (original target 18 October; no backdating).
+
+- Added immutable validated Task snapshots and a versioned JSON TaskStore with
+  persistent IDs, add/list/complete, idempotent completion and schema validation.
+- Added argparse CLI, core-tasks console entry point, module invocation, status
+  filters, help and clear stderr/exit-code contracts. Default local data is ignored.
+- Reused Day 6 staged writes; corrupt stores and failed updates preserve prior data.
+- Added numbered mini-project guide, disposable subprocess demo and CI step.
+- Validation: 28 storage tests + 19 CLI tests added; 245 tests passed overall,
+  no failures/skips. Ruff lint/format passed; demo matched; pip check passed.
+  Editable reinstall and installed console entry point verified. No new dependencies.
+- Commits: 62521bd (model/storage), 847bac8 (CLI and process tests), and this commit
+  (guide, safe demonstration, CI and tracking).
+- Limitations: in-memory JSON, trusted local file, one writer at a time; no locking,
+  backup/recovery, fsync/crash durability, deletion, dates or authentication.
+- Push and remote CI verification are recorded in the central workspace log.
+
+Day 6 publication verified: b354dcf, cfce740 and 2f6f50c; successful CI at
+https://github.com/SarwarHello/python-core-mastery/actions/runs/43546595574.
+
 ## Next step
 
-Day 7: mini-project - CLI task manager. Await user instruction.
+Day 8: arrays and two pointers in python-dsa-challenges. Await user instruction;
+that repository has not been created as part of Day 7.

@@ -145,9 +145,36 @@ from a missing file. Logs contain outcome metadata rather than raw notes or path
 The guide includes exact output and filesystem limitations. Day 6 was completed on
 14 November 2026 with three meaningful commits.
 
+## Day 7: CLI task manager
+
+[Mini-project guide](07_cli_task_manager/README.md) covers installation, commands,
+storage format, error handling and limitations. After reinstalling the editable
+package, run:
+
+```powershell
+.venv\Scripts\core-tasks.exe add "Review Python basics"
+.venv\Scripts\core-tasks.exe list
+.venv\Scripts\core-tasks.exe complete 1
+```
+
+Tasks persist in `.task-manager.json` in the current directory (ignored by Git).
+Use `--file PATH` before the command to choose a file. The parent folder must exist.
+`list --status open` and `list --status done` filter results. Help is available
+with `--help`; module invocation also works: `python -m core_mastery.task_cli`.
+
+For a disposable demo that does not touch your task file:
+
+```powershell
+.venv\Scripts\python.exe 07_cli_task_manager/examples.py
+```
+
+The task manager validates stored data, preserves corrupt files, and stages writes
+before replacement. It is intended for one writer at a time, not concurrent use.
+Day 7 was completed on 21 November 2026, finishing the foundations phase.
+
 ## Progress
 
-Days 1–6 are implemented with 198 passing local tests. Day 2 was completed
+Days 1–7 are implemented with 245 passing local tests. Day 2 was completed
 ahead of its target date; actual work is recorded as 12 October 2026, not backdated.
 See [ROADMAP.md](ROADMAP.md) and [PROGRESS.md](PROGRESS.md) for scope and evidence.
 
